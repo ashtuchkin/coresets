@@ -8,3 +8,8 @@ var
 *.swp
 *.pyc
 tmp/
+
+.venv
+.pytest_cache
+dist
+build

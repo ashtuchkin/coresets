@@ -10,16 +10,18 @@ To get started, take a look at:
 
 Setup
 -------
-```
-pip install -r requirements.txt
-python setup.py build_ext --inplace
+1. Install [poetry](https://python-poetry.org/docs/).
+2.
+```shell
+poetry build
+poetry install
 ```
 
 Running tests
 -------------
 In project root run:
-```
-python -m pytest tests/
+```shell
+poetry run pytest
 ```
 
 

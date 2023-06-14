@@ -1,7 +1,7 @@
 """
 Copying the necessary code from:
 https://github.com/scikit-learn/scikit-learn/tree/8d295fbdc77c859b2ee811b2ee0588c48960bf6a
-to fix the braking dependencies
+to fix the breaking dependencies
 """
 
 

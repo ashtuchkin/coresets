@@ -19,9 +19,11 @@ class WeightedGaussianMixture(GaussianMixture):
                  random_state=None, warm_start=False,
                  verbose=0, verbose_interval=10):
         super(WeightedGaussianMixture, self).__init__(
-            n_components, covariance_type, tol, reg_covar, max_iter, n_init,
-            init_params, weights_init, means_init, precisions_init, random_state,
-            warm_start, verbose, verbose_interval)
+            n_components=n_components, covariance_type=covariance_type, tol=tol,
+            reg_covar=reg_covar, max_iter=max_iter, n_init=n_init, init_params=init_params,
+            weights_init=weights_init, means_init=means_init, precisions_init=precisions_init,
+            random_state=random_state, warm_start=warm_start, verbose=verbose,
+            verbose_interval=verbose_interval)
 
     def _initialize(self, X, resp):
         self.weight_mat = self.weights.repeat(self.n_components).reshape(X.shape[0], self.n_components)

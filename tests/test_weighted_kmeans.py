@@ -2,7 +2,7 @@ from __future__ import division, absolute_import
 
 import pytest
 import numpy as np
-from algorithms import weighted_kmeans
+from coresets.algorithms import weighted_kmeans
 
 
 class TestWeightedKmeans(object):

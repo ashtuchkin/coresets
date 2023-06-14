@@ -1,5 +1,5 @@
 from sklearn.utils.extmath import row_norms
-from utils.kmeans_init import _init_centroids
+from coresets.utils.kmeans_init import _init_centroids
 
 from coresets import Coreset
 import numpy as np

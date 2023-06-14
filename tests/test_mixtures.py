@@ -3,7 +3,7 @@ from __future__ import division, absolute_import
 from sklearn import datasets
 
 import pytest
-from algorithms import WeightedGaussianMixture, WeightedBayesianGaussianMixture
+from coresets.algorithms import WeightedGaussianMixture, WeightedBayesianGaussianMixture
 
 
 class TestMixtures(object):

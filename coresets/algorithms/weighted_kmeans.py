@@ -1,7 +1,7 @@
 from sklearn.utils import check_random_state
-from utils.kmeans_init import _init_centroids
+from coresets.utils.kmeans_init import _init_centroids
 from sklearn.utils.extmath import row_norms
-from algorithms import weighted_kmeans_
+from coresets.algorithms import weighted_kmeans_
 import numpy as np
 
 
