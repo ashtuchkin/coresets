@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "coresets"
-version = "0.1.0"
+version = "0.2.0"
 description = "Coreset generation for k-Means and (Bayesian) Gaussian mixture models"
 authors = [
     "Zalán Borsos <zalan.borsos@inf.ethz.ch>",
@@ -9,9 +9,8 @@ authors = [
 repository = "https://github.com/ashtuchkin/coresets"
 license = "BSD-3-Clause"
 readme = "readme.md"
-packages = [
-    { include = "coresets" },
-    { include = "tests", format = "sdist" },
+include = [
+    { path = "src", format = "sdist" },
 ]
 
 [tool.poetry.build]

@@ -35,3 +35,14 @@ The implementation of the library is based on the following works:
 >Lucic, M., Faulkner, M., Krause, A., & Feldman, D. (2018). Training Gaussian Mixture Models at Scale via Coresets. Journal of Machine Learning Research, 18, Art-No.
 
 > Borsos, Z., Bachem, O., & Krause, A. Variational Inference for DPGMM with Coresets. (2017). Advances in Approximate Bayesian Inference
+
+
+Publishing a new version
+------------------------
+
+```shell
+rm -rf build dist
+poetry build
+rename -v 's/manylinux_2_\d+/manylinux1/' dist/*.whl  # Rename the wheel to manylinux1 as we don't use advanced LIBC feats
+poetry publish
+```
